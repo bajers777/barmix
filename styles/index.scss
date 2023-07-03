@@ -1,2 +1,10 @@
 @use 'header';
 @use 'variables';
+@use 'fontStyles';
+@use 'slider';
+@use 'about';
+@use 'pricing';
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}

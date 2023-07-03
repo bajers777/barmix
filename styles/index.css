@@ -1,3 +1,15 @@
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 .navbar img {
   max-width: 100px;
 }
@@ -9,31 +21,42 @@
   height: 80vh;
 }
 
+.slider__container {
+  background-color: #fff;
+}
+
 .about {
-  color: #fff;
-  background-color: #1F1F1F;
+  color: #E35F00;
+  background-color: #000000;
 }
 .about .row {
-  height: 60vh;
+  min-height: 60vh;
 }
 .about .row .col {
   display: flex;
   flex-flow: column;
-  border: 8px solid #000000;
   border-radius: 15px;
 }
 .about .row .col i {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75px;
-  height: 75px;
+  width: 4rem;
+  height: 4rem;
   color: #E35F00;
-  border: 5px solid #E35F00;
-  border-radius: 100%;
 }
 .about .row .col p {
   text-align: justify;
+}
+
+.pricing {
+  background-color: #1F1F1F;
+  min-height: 60vh;
+  color: white;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */

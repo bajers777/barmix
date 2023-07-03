@@ -1,0 +1,29 @@
+@use 'variables' as *;
+@use 'fontStyles' as *;
+
+.about{
+    color: $color_third;
+    background-color: $color_main;
+    .row{
+        min-height: 60vh;
+        .col{
+            display: flex;
+            flex-flow: column;
+            // border: 5px solid $color_second;
+            border-radius: 15px;
+            // height: 350px;
+ 
+                i{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 4rem;
+                    height: 4rem;
+                    color: $color_third;
+                }
+                p{
+                    text-align: justify;
+                }
+        }
+    }
+}
