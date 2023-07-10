@@ -4,4 +4,20 @@
     background-color: $color_second;
     min-height: 60vh;
     color: white;
+    &__card{
+        color: $color_second;
+        border-radius: 1rem;
+        background-color: white;
+        &--price{
+            span{
+                font-weight: 400;
+                font-style: italic;
+                color: $color_third;
+                b{
+                    font-size: 3rem;
+                }
+            }
+
+        }
+    }
 }

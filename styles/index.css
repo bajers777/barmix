@@ -1,5 +1,7 @@
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: italic;
 }
 
 h2 {
@@ -53,6 +55,19 @@ h3 {
   background-color: #1F1F1F;
   min-height: 60vh;
   color: white;
+}
+.pricing__card {
+  color: #1F1F1F;
+  border-radius: 1rem;
+  background-color: white;
+}
+.pricing__card--price span {
+  font-weight: 400;
+  font-style: italic;
+  color: #E35F00;
+}
+.pricing__card--price span b {
+  font-size: 3rem;
 }
 
 body {
