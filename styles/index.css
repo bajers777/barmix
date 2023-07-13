@@ -1,5 +1,6 @@
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
   font-weight: 900;
   font-style: italic;
 }
@@ -56,10 +57,24 @@ h3 {
   min-height: 60vh;
   color: white;
 }
+.pricing__text p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
 .pricing__card {
+  padding-bottom: 2rem;
   color: #1F1F1F;
   border-radius: 1rem;
   background-color: white;
+}
+.pricing__card--price {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricing__card--price li {
+  padding-bottom: 0.5rem;
 }
 .pricing__card--price span {
   font-weight: 400;
@@ -68,6 +83,18 @@ h3 {
 }
 .pricing__card--price span b {
   font-size: 3rem;
+}
+.pricing__card--price button {
+  color: white;
+  width: 50%;
+  background-color: #E35F00;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 2px 2px;
+}
+.pricing__card--price hr {
+  height: 10px;
 }
 
 body {

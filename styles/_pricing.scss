@@ -4,11 +4,25 @@
     background-color: $color_second;
     min-height: 60vh;
     color: white;
+    &__text{
+        p{
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+    }
     &__card{
+        padding-bottom: 2rem;
         color: $color_second;
         border-radius: 1rem;
         background-color: white;
         &--price{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            li{
+                padding-bottom: .5rem;
+            }
             span{
                 font-weight: 400;
                 font-style: italic;
@@ -17,7 +31,18 @@
                     font-size: 3rem;
                 }
             }
-
+            button{
+                color: white;
+                width: 50%;
+                background-color: $color_third;
+                padding: .5rem 1rem;
+                border-radius: .5rem;
+                border: none;
+                box-shadow: 2px 2px;
+            }
+            hr{
+                height: 10px;
+            }
         }
     }
 }
