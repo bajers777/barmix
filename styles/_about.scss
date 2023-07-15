@@ -2,28 +2,39 @@
 @use 'fontStyles' as *;
 
 .about{
-    color: $color_third;
     background-color: $color_main;
     .row{
-        min-height: 60vh;
+        min-height: 80vh;
         .col{
             display: flex;
             flex-flow: column;
             // border: 5px solid $color_second;
             border-radius: 15px;
             // height: 350px;
- 
-                i{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 4rem;
-                    height: 4rem;
-                    color: $color_third;
-                }
-                p{
-                    text-align: justify;
-                }
+            h3{
+                color: $color_third;
+            }
+            i{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 4rem;
+                height: 4rem;
+            }
+            p{
+                font-weight: 400;
+                text-align: justify;
+            }
         }
+    }
+    .fa-solid{
+        color: $color_third;
+    }
+    &__text{
+        text-align: justify;
+        h3{
+            color: $color_third;
+        }
+        color: white;
     }
 }

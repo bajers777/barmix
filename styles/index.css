@@ -13,6 +13,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+p {
+  font-weight: 500;
+}
+
 .navbar img {
   max-width: 100px;
 }
@@ -29,16 +33,18 @@ h3 {
 }
 
 .about {
-  color: #E35F00;
   background-color: #000000;
 }
 .about .row {
-  min-height: 60vh;
+  min-height: 80vh;
 }
 .about .row .col {
   display: flex;
   flex-flow: column;
   border-radius: 15px;
+}
+.about .row .col h3 {
+  color: #E35F00;
 }
 .about .row .col i {
   display: flex;
@@ -46,10 +52,20 @@ h3 {
   justify-content: center;
   width: 4rem;
   height: 4rem;
-  color: #E35F00;
 }
 .about .row .col p {
+  font-weight: 400;
   text-align: justify;
+}
+.about .fa-solid {
+  color: #E35F00;
+}
+.about__text {
+  text-align: justify;
+  color: white;
+}
+.about__text h3 {
+  color: #E35F00;
 }
 
 .pricing {
