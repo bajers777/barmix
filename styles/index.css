@@ -113,6 +113,46 @@ p {
   height: 10px;
 }
 
+.faq {
+  background-color: #1F1F1F;
+  color: white;
+}
+.faq__element {
+  max-height: 200px;
+  cursor: pointer;
+}
+.faq .hidden {
+  height: 0;
+  opacity: 0;
+  transform: translate(-100%);
+}
+.faq .show_element {
+  transition: height 1s, opacity 0.5s;
+  height: 150px;
+  display: flex;
+}
+
+.compar {
+  background: url(/images/compar_bg.jpg) center no-repeat;
+  background-size: 100%;
+  background-color: #000000;
+}
+.compar__offer {
+  color: white;
+  height: 25rem;
+  background-color: #1F1F1F;
+  box-shadow: 5px 5px 5px #000000;
+}
+.compar__offer b {
+  font-size: 2rem;
+  font-style: italic;
+  color: #E35F00;
+}
+
+.contact {
+  background-color: #000000;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }

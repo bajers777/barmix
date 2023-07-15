@@ -1,0 +1,26 @@
+@use 'variables' as *;
+@use 'fontStyles' as *;
+
+.faq{
+    // height: 80vh;
+    background-color: $color_second;
+    color: white;
+    &__element{
+        max-height: 200px;
+        cursor: pointer;
+    }
+    .hidden{
+        height: 0;
+        opacity: 0;
+        transform: translate(-100%);        
+    }
+
+    .show_element{
+        transition: height 1s, opacity .5s;
+        height: 150px;
+        display: flex;
+        
+    }
+    
+}
+

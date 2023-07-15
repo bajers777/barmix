@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+.compar{
+    // height: 100vh;
+    background: url(/images/compar_bg.jpg) center no-repeat;
+    background-size: 100%;
+    background-color: $color_main;
+    &__offer{
+        color: white;
+        height: 25rem;
+        background-color: $color_second;
+        box-shadow: 5px 5px 5px $color_main;
+        b{
+            font-size: 2rem;
+            font-style: italic;
+            color: $color_third;
+        }
+    }
+}
