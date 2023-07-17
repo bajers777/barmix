@@ -1,6 +1,16 @@
 @use 'variables' as *;
 
 .contact{
+    color: white;
     background-color: $color_main;
-    
+    text-align: center;
+    ul{
+        text-align: left;
+        li{
+            list-style: none;
+        }
+    }
+    .fa-brands{
+        color: $color_third;
+    }
 }

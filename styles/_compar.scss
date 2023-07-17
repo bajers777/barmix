@@ -3,8 +3,12 @@
 .compar{
     // height: 100vh;
     background: url(/images/compar_bg.jpg) center no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-color: $color_main;
+    &__head_text{
+        color: white;
+        text-shadow: 1px 1px 1px $color_main;
+    }
     &__offer{
         color: white;
         height: 25rem;

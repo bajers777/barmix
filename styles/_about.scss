@@ -3,8 +3,10 @@
 
 .about{
     background-color: $color_main;
-    .row{
+    &__upper-text{
         min-height: 80vh;
+    }
+    .row{
         .col{
             display: flex;
             flex-flow: column;
@@ -37,4 +39,26 @@
         }
         color: white;
     }
+
+    &__full_menu{
+        &--icons{
+            animation: .5s linear 1s arrowUp infinite alternate;
+        }
+        text-align: center;
+        a{
+            color: $color_third;
+            text-decoration: underline;
+        }
+    }
+}
+
+@keyframes arrowUp {
+
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(0, -1rem);
+    }
+    
 }
