@@ -17,8 +17,29 @@ p {
   font-weight: 500;
 }
 
+button {
+  font-weight: 700;
+  color: white;
+  width: 50%;
+  background-color: #E0E000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+button span {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  color: white;
+}
 .navbar img {
   max-width: 100px;
+}
+.navbar .nav-item_contact {
+  display: flex;
+  flex-flow: column;
 }
 
 .test {
@@ -32,29 +53,24 @@ p {
   height: 80vh;
   color: white;
 }
-.hero-container .row {
-  height: 100%;
-  width: 100%;
-}
-.hero-container__mobile-form {
-  width: 50%;
-  text-shadow: 3px 3px 5px #000000;
-}
-.hero-container__mobile-form--strings {
+.hero-container__typed-container {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 50%;
+  text-shadow: 3px 3px 5px #000000;
+  height: 300px;
   margin-right: 0;
-  border: 1.5rem solid #E0E000;
   border-radius: 0.5rem;
 }
-.hero-container__mobile-form--strings u, .hero-container__mobile-form--strings b {
+.hero-container__typed-container u, .hero-container__typed-container b {
   color: #E0E000;
 }
-.hero-container__mobile-form--strings b {
+.hero-container__typed-container b {
   font-size: 5.5rem;
+}
+.hero-container .row {
+  height: 100%;
 }
 
 #typed {
@@ -156,19 +172,12 @@ p {
 .pricing__card--price span b {
   font-size: 3rem;
 }
-.pricing__card--price button {
-  color: white;
-  width: 50%;
-  background-color: #E0E000;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: none;
-  box-shadow: 2px 2px;
-}
-.pricing__card--price hr {
-  height: 10px;
+.pricing__form--button {
+  margin-top: 1rem;
+  max-width: 10rem;
 }
 
+/* Scale from center */
 .faq {
   background-color: #1F1F1F;
   color: white;
@@ -192,6 +201,10 @@ p {
   background: url(/images/compar_bg.jpg) center no-repeat;
   background-size: cover;
   background-color: #000000;
+}
+.compar h1 {
+  text-align: center;
+  text-shadow: 1px 1px 3px #E0E000;
 }
 .compar__head_text {
   color: white;
@@ -221,7 +234,44 @@ p {
   list-style: none;
 }
 .contact .fa-brands {
+  transition: all 0.1s ease-in;
   color: #E0E000;
+}
+.contact .fa-brands:hover {
+  transform: scale(1.1);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+}
+.hover-underline-animation::after {
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn-anim__color:hover {
+  box-shadow: none;
+  outline: solid 2px #000000;
+  outline-offset: -2px;
+  background-color: #000000;
+  color: white;
+  text-shadow: none;
 }
 
 body {

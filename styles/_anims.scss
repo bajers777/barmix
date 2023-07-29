@@ -1,0 +1,37 @@
+   @use 'variables' as *;
+   .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: white;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0087ca;
+            transform-origin: bottom right;
+        }
+        &::after{
+            transition: transform 0.25s ease-out;
+        }
+        &:hover::after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+      }
+    .btn-anim{
+        &__color{
+            // transition: background-color, color .05s;
+            &:hover{
+                box-shadow: none;
+                outline: solid 2px $color_main;
+                outline-offset: -2px;
+                background-color: $color_main;
+                color: white;
+                text-shadow: none;
+            }
+        }
+    }

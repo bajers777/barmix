@@ -1,3 +1,4 @@
+@use 'variables' as *;
 h1{
     font-size: 2.5rem;
     letter-spacing: .15rem;
@@ -17,3 +18,17 @@ p{
     font-weight: 500;
 }
 
+
+button{
+    font-weight: 700;
+    color: white;
+    width: 50%;
+    background-color: $color_third;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    span{
+        color: white;
+        text-decoration: none;
+    }
+}

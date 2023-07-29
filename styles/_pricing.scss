@@ -1,5 +1,4 @@
 @use 'variables' as *;
-
 .pricing{
     background-color: $color_second;
     min-height: 60vh;
@@ -31,18 +30,24 @@
                     font-size: 3rem;
                 }
             }
-            button{
-                color: white;
-                width: 50%;
-                background-color: $color_third;
-                padding: .5rem 1rem;
-                border-radius: .5rem;
-                border: none;
-                box-shadow: 2px 2px;
-            }
-            hr{
-                height: 10px;
-            }
+        }
+    }
+    &__form{
+        &--button{
+            margin-top: 1rem;
+            max-width: 10rem;
         }
     }
 }
+
+/* Scale from center */
+// li:nth-child(3) a::after {
+//     opacity 1;
+//     transform: scale(0);
+//     transform-origin: center;
+//   }
+  
+//   li:nth-child(3) a:hover::after,
+//   li:nth-child(3) a:focus::after{
+//     transform: scale(1);
+//   }

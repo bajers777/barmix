@@ -5,6 +5,10 @@
     background: url(/images/compar_bg.jpg) center no-repeat;
     background-size: cover;
     background-color: $color_main;
+    h1{
+        text-align: center;
+        text-shadow: 1px 1px 3px $color_third;
+    }
     &__head_text{
         color: white;
         text-shadow: 1px 1px 1px $color_main;

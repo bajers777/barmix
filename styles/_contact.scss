@@ -11,6 +11,10 @@
         }
     }
     .fa-brands{
+        transition: all .1s ease-in;
         color: $color_third;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
